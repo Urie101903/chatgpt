@@ -15,7 +15,7 @@ def response_generator(prompt):
     except Exception as e:
         yield f"An error occurred: {str(e)}"
 
-st.title("BND CHATBOT")
+st.title("YURI")
 
 # Initialize chat history
 if "messages" not in st.session_state:
@@ -27,7 +27,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # Accept user input
-if prompt := st.chat_input("HI! I'm BND Chatbot, what is your question?"):
+if prompt := st.chat_input("ask questions"):
     # Add user message to chat history
     st.session_state.messages.append({"role": "user", "content": prompt})
     # Display user message in chat message container
