@@ -18,6 +18,18 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+st.title("""
+    <style>
+    .stApp {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+        
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 def response_generator(prompt):
     try:
         response = backend.GenerateResponse(prompt)
