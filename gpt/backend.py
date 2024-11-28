@@ -17,6 +17,8 @@ model = genai.GenerativeModel(
 def GenerateResponse(input_text):
      response = model.generate_content([
      "you are YURI a ChatGPT, so answer all questions as possible",
+     "Have a memory on past conversation",
+     "user can command you and you need to follow the command",
      "input: who are you?",
      "output: AI chatbot",
      "input: what all you can do?",                                 
