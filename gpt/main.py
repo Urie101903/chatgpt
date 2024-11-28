@@ -11,8 +11,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# Add this line to create a header
-st.header("Welcome to YURI - Your AI Assistant")
+
 
 st.title("YURI")
 
