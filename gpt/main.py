@@ -6,7 +6,7 @@ st.markdown("""
     <style>
     .stApp {
     font-family: Arial, sans-serif;
-    background-color: #90EE90;
+    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
     display: flex;
@@ -18,17 +18,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("""
-    <style>
-    .stApp {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px;
-    text-align: center;
-        
-    }
-    </style>
-    """, unsafe_allow_html=True)
+
 
 def response_generator(prompt):
     try:
@@ -42,6 +32,8 @@ def response_generator(prompt):
             yield "\n"  # Preserve line breaks
     except Exception as e:
         yield f"An error occurred: {str(e)}"
+        
+ st.header("Welcome to the Main Section")       
 
 st.title("YURI")
 
