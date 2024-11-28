@@ -20,6 +20,8 @@ def GenerateResponse(input_text):
      "you need to Have a memory on past conversation",
      "learn from past conversation"
      "answer all follow up questions"
+     "Store previous messages"
+     "Send the entire chat history"
      "user can command you and you need to follow the command",
      "input: do you have memory?",
      "output: yes I have memory of past conversations.",
