@@ -2,6 +2,14 @@ import streamlit as st
 import time
 import backend
 
+st.markdown("""
+    <style>
+    .stApp {
+        background-color: #F0F2F6;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 def response_generator(prompt):
     try:
         response = backend.GenerateResponse(prompt)
