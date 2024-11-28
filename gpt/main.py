@@ -5,18 +5,16 @@ import backend
 st.markdown("""
     <style>
     .stApp {
-    font-family: Arial, sans-serif;
+   
     background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-        
-    }
+ }
     </style>
     """, unsafe_allow_html=True)
+
+# Add this line to create a header
+st.header("Welcome to YURI - Your AI Assistant")
+
+st.title("YURI")
 
 
 
@@ -33,9 +31,9 @@ def response_generator(prompt):
     except Exception as e:
         yield f"An error occurred: {str(e)}"
         
- st.header("Welcome to the Main Section")       
+      
 
-st.title("YURI")
+
 
 # Initialize chat history
 if "messages" not in st.session_state:
