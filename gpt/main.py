@@ -5,7 +5,7 @@ import backend
 st.markdown("""
     <style>
     .stApp {
-        background-color: #F0F2F6;
+        background-color: #90EE90;
     }
     </style>
     """, unsafe_allow_html=True)
