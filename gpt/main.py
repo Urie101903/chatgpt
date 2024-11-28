@@ -5,7 +5,15 @@ import backend
 st.markdown("""
     <style>
     .stApp {
-        background-color: #90EE90;
+    font-family: Arial, sans-serif;
+    background-color: #90EE90;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+        
     }
     </style>
     """, unsafe_allow_html=True)
